@@ -1,6 +1,6 @@
-# Config.js
+# dev.js
 
-Stop over-engineer your JS config, just install @90dy/config
+Stop over-engineer your JS config, just `npm install -D 90dy`
 
 ## Introduction
 
