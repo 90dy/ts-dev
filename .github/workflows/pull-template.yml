@@ -18,6 +18,10 @@ jobs:
     - name: Include .gitconfig to .git/config
       run: |
         [ ! -d '.git' ] || git config --local include.path $PWD/.gitconfig
+    - name: Set committer infos
+      run: |
+        git config --global user.email "90dy+bot@proton.me"
+        git config --global user.name "Just a bot after all"
     - name: Pull template
       run: |
         git fetch template/${{ matrix.template }}
