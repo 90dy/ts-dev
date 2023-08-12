@@ -2,7 +2,7 @@
 	"name": "90dy",
 	"version": "1.0.5",
 	"author": "90dy <90dy@proton.me>",
-	"repository": "https://github.com/90dy/lib.js",
+	"repository": "https://github.com/90dy/dev.js",
 	"description": "Config for Ecmascript development, based on and for developer experience.",
 	"license": "SEE LICENSE IN LICENSE",
 	"keywords": [

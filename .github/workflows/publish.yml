@@ -4,15 +4,17 @@ on:
     branches:
       - main
 jobs:
-  publish:
-    name: Publish NPM
+  release:
+    name: Release
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18]
     steps:
     - uses: actions/checkout@v2
-    - uses: pnpm/action-setup@v2.2.2
+      with:
+        ref: main
+    - uses: pnpm/action-setup@v2
       with:
         version: 7
     - name: Use Node.js ${{ matrix.node-version }}
