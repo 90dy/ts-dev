@@ -4,7 +4,7 @@ Stop over-engineer your JS config, just `npm install -D 90dy`
 
 ## Introduction
 
-Development environment is my first focus, developer should never haave to struggle, and better, they must have an optimized ecosystem to improve their productivity, without having to know it.
+Development environment is my first focus, developer should never haave to struggle to configure anything, and better, they must have an optimized ecosystem to improve their productivity, without having to know it.
 
 ## Philosophy
 
