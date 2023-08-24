@@ -1,7 +1,9 @@
 name: Pull templates
 on:
+  push:
+    branches:
+      - main
   schedule:
-    # - cron: 0 1 * * *
     - cron: 1/15 * * * *
 jobs:
   pull:
