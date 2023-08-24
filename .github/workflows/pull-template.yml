@@ -26,11 +26,14 @@ jobs:
         git config --global user.name "Just a bot after all"
     - name: Pull template
       run: |
-        git fetch template/${{ matrix.template }}
-        git merge --squash --allow-unrelated-histories template/${{ matrix.template }}
+        git fetch template/${{ matrix.template }} || true
+        git merge --squash --allow-unrelated-histories template/${{ matrix.template }} -X theirs || true
+    - name: Push on repository
+      run: |
+        git push -u origin template/${{ matrix.template }}
+
     - name: Create pull request
       uses: peter-evans/create-pull-request@v5
       with:
         title: Auto upgrade from template
         branch: template/${{ matrix.template }}
-        commit-message: "chore: auto upgrade from template"

@@ -49,11 +49,15 @@
 	"dependencies": {
 		"@commitlint/cli": "latest",
 		"@commitlint/config-conventional": "latest",
-		"@semantic-release/npm": "latest",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/commit-analyzer": "^10.0.1",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^9.0.4",
+		"@semantic-release/npm": "^10.0.5",
 		"@types/eslint": "latest",
 		"@types/node": "latest",
-		"@types/react": "latest",
 		"@types/prettier": "latest",
+		"@types/react": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
 		"bun-types": "latest",
@@ -73,8 +77,8 @@
 		"prettier": "latest",
 		"semantic-release": "latest",
 		"type-fest": "latest",
+		"typescript": "latest",
 		"webpack": "latest",
-		"zod": "latest",
-		"typescript": "latest"
+		"zod": "latest"
 	}
 }
