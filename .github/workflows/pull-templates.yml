@@ -17,17 +17,26 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: main
+
     - name: Include .gitconfig to .git/config
       run: |
         [ ! -d '.git' ] || git config --local include.path $PWD/.gitconfig
+
     - name: Set committer infos
       run: |
         git config --global user.email "90dy+bot@proton.me"
         git config --global user.name "Just a bot after all"
+
     - name: Pull template
       run: |
         git fetch template/${{ matrix.template }} || true
         git merge --squash --allow-unrelated-histories template/${{ matrix.template }} -X theirs || true
+
+    - name: Revert commit update on .github/workflows if WORKFLOW_TOKEN doesn't exists
+      run: |
+        [ -z "${{ secrets.WORKFLOW_TOKEN }}" ] \
+          || git reset -- .github/workflows && git commit --amend --no-edit --no-verify
+
     - name: Push on repository
       run: |
         git push -u origin template/${{ matrix.template }}
