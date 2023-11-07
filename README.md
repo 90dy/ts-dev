@@ -1,49 +1,49 @@
-# dev.js
+# Typescript Dev Config
 
-Stop over-engineer your JS config, just `npm install -D 90dy`
+Simplify Your TypeScript Configuration with `90dy` - No Over-Engineering Required!
 
 ## Introduction
 
-Development environment is my first focus, developer should never haave to struggle to configure anything, and better, they must have an optimized ecosystem to improve their productivity, without having to know it.
+In the world of software development, the focus should be on writing code and creating innovative solutions, not grappling with complex configurations. That's where `90dy` comes in. This package is designed to provide developers with an optimized and hassle-free environment to enhance their productivity, all without requiring an in-depth understanding of the configuration intricacies.
 
 ## Philosophy
 
 ### Linter (ESlint)
 
-For the ESLint config, I use custom config when developing (currently on VSCode);
-
-For example, the unused import are not deleted at this time, but only when pushing to the repository.
-It prevent developers to have to reimport everything when auto-save delete it.
+We understand the importance of code quality, and that's why `90dy` includes a custom ESLint configuration that we use during development, especially within the VSCode ecosystem. Notably, this configuration retains unused imports until you push your changes to the repository. This approach ensures that developers won't have to reimport everything every time an auto-save operation removes imports, streamlining your development process.
 
 ### Formatter (ESlint, Prettier, Editor config, ...)
 
-Opinionated question, isn't it ? Well, then.
+Our opinionated choices are aimed at simplifying your development workflow.
 
-#### Semicolon 🚫
+#### No Semicolons 🚫
 
-I worked a lot in companies where semicolon where required, eventually this is just adding a character that prevent you to lint and format your files when you just copy a part of code to a function argument or JSX children. Try to convince me that it's more readable, or that optimize transpilatioin, it's not.
+At `90dy`, we've worked in environments that required semicolons, but we believe that they add unnecessary complexity. Semicolons can prevent your linter and code formatter from working seamlessly when copying and pasting code or working with function arguments and JSX children. We challenge you to convince us that they improve readability or optimize transpilation.
 
-#### Tab over spaces ✅
+#### Tabs Over Spaces ✅
 
-Read [https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/]("Nobody talks about the reason to use tabs") will end the debates
+Check out [Nobody talks about the reason to use tabs](https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/) to put an end to the debate. We opt for tabs for practical reasons.
 
 #### Single Quotes ✅
 
-Because less is more, even in JSX
+Because simplicity often leads to elegance, even in JSX.
 
-#### Sorted Import ✅
+#### Sorted Imports ✅
 
-Import must always been sorted and deleted when unused.
+Your imports should always be sorted and automatically removed when they're unused.
 
 ### Versioning
 
-Semantic release
+`90dy` follows a semantic release strategy to ensure that version numbers convey meaning about the changes in your codebase.
 
 ### Commits
 
-Commits should follow commilint instruction, scopes should be required, and must be predefined
-Searching for tools, and open to debate
+We encourage developers to adhere to the commitlint instructions, ensuring that commit scopes are both required and predefined. We're open to discussions about tools and practices to make the development process even smoother.
 
-### Hooks
+### Git Hooks
 
-Always better to push some good code, but the hooks' pipeline must be fast
+Fast and efficient pipelines are crucial for any development workflow. While it's always better to push high-quality code, `90dy` is here to support your efforts with streamlined hooks for a more efficient process.
+
+## License
+
+This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file for details.
