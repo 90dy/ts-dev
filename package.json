@@ -1,7 +1,7 @@
 {
-	"name": "@90dy/ts-dev",
+	"name": "90dy",
 	"version": "1.0.5",
-	"author": "90dy <90dy@proton.me>",
+	"author": "90dy <forward@90dy.ltd>",
 	"repository": "https://github.com/90dy/dev.js",
 	"description": "Config for Ecmascript development, based on and for developer experience.",
 	"license": "SEE LICENSE IN LICENSE",
@@ -22,10 +22,9 @@
 			"./babel-config"
 		]
 	},
-	"commintlint": {
+	"commitlint": {
 		"extends": "./commitlint-config"
 	},
-	"lint-staged": "./lintstaged-config",
 	"prettier": "./prettier-config",
 	"scripts": {
 		"prepare": "./scripts/prepare.sh",
@@ -49,11 +48,11 @@
 	"dependencies": {
 		"@commitlint/cli": "latest",
 		"@commitlint/config-conventional": "latest",
-		"@semantic-release/changelog": "^6.0.3",
-		"@semantic-release/commit-analyzer": "^10.0.1",
-		"@semantic-release/git": "^10.0.1",
-		"@semantic-release/github": "^9.0.4",
-		"@semantic-release/npm": "^10.0.5",
+		"@semantic-release/changelog": "latest",
+		"@semantic-release/commit-analyzer": "latest",
+		"@semantic-release/git": "latest",
+		"@semantic-release/github": "latest",
+		"@semantic-release/npm": "latest",
 		"@types/eslint": "latest",
 		"@types/node": "latest",
 		"@types/prettier": "latest",

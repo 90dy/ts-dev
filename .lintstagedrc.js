@@ -1,2 +1,1 @@
-module.exports =
-	require("./lintstaged-config")
+module.exports = require('./lintstaged-config')

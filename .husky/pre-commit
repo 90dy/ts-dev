@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpx lint-staged --concurrent=false
+pnpm i --frozen-lockfile --ignore-scripts
+
+pnpm exec lint-staged --concurrent=false
