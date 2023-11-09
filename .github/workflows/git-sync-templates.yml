@@ -27,6 +27,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           repository: https://github.com/${{ matrix.template }}
-          branch: ${{ github.ref }}
+          branch: ${{ github.ref_name }}
           user-email: forward+bot@90dy.ltd
           user-name: 90dy
